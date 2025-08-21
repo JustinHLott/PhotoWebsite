@@ -1,5 +1,7 @@
 .wrapper {
-    background: lightgoldenrodyellow;
+    /*background: white;*/
+    background-image: radial-gradient( rgb(63, 63, 63),darkgray,white,white,white);
+    background-repeat:no-repeat;
     width: 80%;
     max-width: 1100px;
     min-width: 450px;
@@ -22,7 +24,7 @@ body {
     margin-top: 0
 }
 header {
-    background-color: rgb(241, 242, 244);
+    background-color: rgb(241, 242, 244, 0.911);
     color: rgb(69,71,56);
     background-image: url(camera.jpg);
     background-repeat: no-repeat;
@@ -37,33 +39,28 @@ header {
     min-width: 450px;
 }
 nav {
-    background-color: rgb(241, 242, 244);
+    background-color: rgb(241, 242, 244, 0.911);
     font-weight: bold;
     padding-top: 1em;
     padding-bottom: 6px;
     border-bottom: 2px solid black;
     text-indent: 1em;
 }
-#nav-reservations {
-    position:fixed;
-    top: 4.2em;
-    width: 80%;
-    max-width: 1100px;
-    min-width: 450px;
-
-}
 nav a {
     text-decoration: none; /*This makes no underlines on nav hyperlinks*/
     transition:color 4s linear;
 }
 a:hover {
-    color: #13bcd3;
+    color: black;
 }
 nav a:hover {
     transition-property: color;
     transition-duration: 0s;
     transition-timing-function: linear;
 }
+/*.nav-link.active {
+  color: blue;   
+}*/
 h1 {
     margin-bottom: 0;
 }
@@ -90,11 +87,15 @@ footer {
     font-style: normal;
 }
 #side-bar {/*for the Index page*/
-    background-color: rgb(241, 242, 244);
+    /*background-color: rgb(241, 242, 244);*/
+    background-image: linear-gradient(to right, rgb(241, 242, 244, 0.911), rgb(241, 242, 244, 0.911), rgba(241, 242, 244, 0.911),rgb(63, 63, 63));
+    background-repeat: no-repeat;
     float: right;
     width: 240px;
     margin-right: 20px;
     padding-left: 20px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 }
 #main-area {/*for the Index page*/
     margin-left: 20px;
@@ -103,7 +104,9 @@ footer {
     clear: right;
 }
 #side-bar img {/*for the Index page*/
-    filter: grayscale(100%);/*makes images black and white*/
+    filter:opacity(70%);
+
+    
 }
 /*for the Index page*/
 @media (max-width: 900px) {
